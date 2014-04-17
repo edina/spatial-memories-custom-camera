@@ -71,8 +71,12 @@
                                    @selector(image:finishedSavingWithError:contextInfo:),
                                    nil);
     
-    //TODO: write to assets
-    NSString* docsPath = [NSTemporaryDirectory()stringByStandardizingPath];
+    // We also want to write to application Documents/edina/assets as this it the copy the app will use
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);  
+    NSString *documentsPath = [paths objectAtIndex:0]; //Get the docs directory
+
+    // Get the assets dir to store the image
+    NSString *assets = [documentsPath stringByAppendingPathComponent:@"/edina/assets"];
     
     NSFileManager* fileMgr = [[NSFileManager alloc] init]; // recommended by apple (vs [NSFileManager defaultManager]) to be threadsafe
     // generate unique file name
@@ -80,7 +84,8 @@
     
     int i = 1;
     do {
-        filePath = [NSString stringWithFormat:@"%@/%s%03d.%s", docsPath, "cdv_photo_", i++ ,"jpg"];
+        // Generate a unique filename
+        filePath = [NSString stringWithFormat:@"%@/%s%03d.%s", assets, "cdv_photo_", i++ ,"jpg"];
     } while ([fileMgr fileExistsAtPath:filePath]);{
         // Get the image data (blocking; around 1 second)
         NSData* imageData = UIImageJPEGRepresentation(image, 0.5);
