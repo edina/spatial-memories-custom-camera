@@ -20,7 +20,7 @@
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     <items>
                         <barButtonItem tag="1" image="Default-Landscape.png" id="Q0Y-p0-RHw">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="13">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="13">
                                 <rect key="frame" x="16" y="0.0" width="287" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Take Photo">
@@ -38,27 +38,6 @@
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
         </view>
-        <viewController id="acg-bZ-U6U">
-            <button key="view" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MuY-Hs-Aj9" colorLabel="IBBuiltInLabel-Red">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="29"/>
-                <state key="normal" title="Button"/>
-                <attributedString key="userComments">
-                    <fragment content="fdfdf">
-                        <attributes>
-                            <font key="NSFont" metaFont="toolTip"/>
-                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                        </attributes>
-                    </fragment>
-                </attributedString>
-            </button>
-            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
-            <nil key="simulatedTopBarMetrics"/>
-            <nil key="simulatedBottomBarMetrics"/>
-            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-        </viewController>
     </objects>
     <resources>
         <image name="Default-Landscape.png" width="16" height="16"/>
