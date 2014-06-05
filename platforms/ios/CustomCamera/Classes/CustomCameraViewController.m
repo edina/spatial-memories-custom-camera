@@ -96,4 +96,9 @@
     [self.plugin capturedImageWithPath:filePath];
 }
 
+- (IBAction)cancelTakePhoto:(id)sender {
+    [self.plugin cancelCamera];
+    
+}
+
 @end

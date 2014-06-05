@@ -38,4 +38,9 @@
     [self.viewController dismissModalViewControllerAnimated:YES];
 }
 
+-(void) cancelCamera{
+
+     [self.viewController dismissModalViewControllerAnimated:YES];
+}
+
 @end

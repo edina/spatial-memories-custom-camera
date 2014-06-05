@@ -15,6 +15,7 @@
 
 // Action method
 -(IBAction) takePhotoButtonPressed:(id)sender forEvent:(UIEvent*)event;
+- (IBAction)cancelTakePhoto:(id)sender;
 
 // Declare some properties (to be explained soon)
 @property (strong, nonatomic) CustomCamera* plugin;
