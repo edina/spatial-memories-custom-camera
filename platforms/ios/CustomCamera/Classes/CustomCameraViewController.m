@@ -64,12 +64,15 @@
 	// Get a reference to the captured image
 	UIImage* image = [info objectForKey:UIImagePickerControllerOriginalImage];
     
+    // Check if first param is true - this determines whether or not to save images in gallery
+    NSString* savePhotoInGallery = [self.plugin.latestCommand.arguments objectAtIndex:0];
     
-    // Write to photo gallery
-    UIImageWriteToSavedPhotosAlbum(image,
-                                   self,
-                                   @selector(image:finishedSavingWithError:contextInfo:),
-                                   nil);
+    if ([savePhotoInGallery caseInsensitiveCompare:@"True"] == NSOrderedSame) {
+        UIImageWriteToSavedPhotosAlbum(image,
+                                       self,
+                                       @selector(image:finishedSavingWithError:contextInfo:),
+                                       nil);
+    }
     
     // We also want to write to application Documents/edina/assets as this it the copy the app will use
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);  
