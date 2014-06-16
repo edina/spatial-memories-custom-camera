@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>00A2551D-0559-4C2B-AA0E-43FE3290BAFF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CustomCamera</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>71905F8C-36D6-4E1A-956F-E16B5DAD2E6B</key>
+		<string>ssh://github.com/edina/spatial-memories-custom-camera.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>platforms/ios/CustomCamera.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>71905F8C-36D6-4E1A-956F-E16B5DAD2E6B</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/edina/spatial-memories-custom-camera.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>71905F8C-36D6-4E1A-956F-E16B5DAD2E6B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>71905F8C-36D6-4E1A-956F-E16B5DAD2E6B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>spatial-memories-custom-camera</string>
+		</dict>
+	</array>
+</dict>
+</plist>
